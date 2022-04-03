@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: hsl(212, 45%, 89%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main_container{
+    width: 350px;
+    height: fit-content;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 1em;
+    background-color: white;
+}
+
+.img_container{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    overflow: hidden;
+}
+
+.img_container img{
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+}
+
+.content_container{
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.content_container h1{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: hsl(218, 44%, 22%);
+    padding: 1em 0;
+}
+.content_container span{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: hsl(220, 15%, 55%);
+}
+
+@media screen and (max-width:450px){
+    div.main_container{
+        width: 90%;
+        height: fit-content;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        padding: 1em;
+        margin: 2em 0;
+        background-color: white;
+    }
+}
